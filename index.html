@@ -1,0 +1,51 @@
+<html lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>滚动监控</title>
+<style type="text/css">
+body{position:relative;height:100%;overflow:auto;}
+.nav{position:fixed;left:0;top:0;}
+.nav .active a{color:#bd1000;}
+.con{padding:0 0  0 100px;}
+</style>
+</head>
+<body>
+<div id="navbar">
+	<ul class="nav">
+		<li class="active"><a href="#01">01</a></li>
+		<li><a href="#02">02</a></li>
+		<li><a href="#03">03</a></li>
+		<li><a href="#04">04</a></li>
+		<li><a href="#05">05</a></li>
+		<li><a href="#06">06</a></li>
+		<li><a href="#07">07</a></li>
+		<li><a href="#08">08</a></li>
+		<li><a href="#09">09</a></li>
+	</ul>
+</div>
+<div class="con">
+	<div id="01">01</div>
+	<br/><br/><br/><br/>
+	<div id="02">02</div>
+	<br/><br/><br/><br/>
+	<div id="03">03</div>
+	<br/><br/><br/><br/>
+	<div id="04">04</div>
+	<br/><br/><br/><br/>
+	<div id="05">05</div>
+	<br/><br/><br/><br/>
+	<div id="06">06</div>
+	<br/><br/><br/><br/>
+	<div id="07">07</div>
+	<br/><br/><br/><br/>
+	<div id="08">08</div>
+	<br/><br/><br/><br/>
+	<div id="09">09</div>
+</div>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="scrollspy.js"></script>
+<script type="text/javascript">
+$('body').scrollspy({ target: '#navbar' })
+</script>
+</body>
+</html>
